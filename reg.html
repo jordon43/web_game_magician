@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="game_tetris">Регистрация</h1>
+<div class="input_name">
+
+  <form action="index.html" method="get">
+    <label>
+      <span class="input_name_player" >Введите имя пользователя</span> <br>
+      <input class="cup_name_player"  autocomplete="off" name="text_name" id="text_name" onchange="haveChanges()" placeholder="Имя пользователя"><br>
+    </label>
+    <input type="submit" value="Ввод"  class="button_name_player" id="input_name"   onclick="store(this.parentNode.text_name.value)"  >
+  </form>
+</div>
+<script src="reg_scripts.js"></script>
+</body>
+</html>
